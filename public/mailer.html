@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fyndah Mailer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="signupSection">
+      <div class="info">
+        <h1>Fyndah Mailer</h1>
+      </div>
+      <form action="#" method="POST" class="signupForm" name="signupform">
+        <h2>Send Bulk Email</h2>
+        <ul class="noBullet">
+          <!-- <li>
+            <label for="email"></label>
+            <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+          </li> -->
+          <li>
+            <label for="subject"></label>
+            <input type="text" class="inputFields" id="subject" name="subject" placeholder="Subject" value="" required/>
+          </li>
+          <li>
+            <label for="replyto"></label>
+            <input type="email" class="inputFields" id="replyto" name="replyto" placeholder="Reply to" value="" required/>
+          </li>
+          <li>
+            <label for="email"></label>
+            <textarea id="email" class="inputFields myTextarea emails" name="eMail" placeholder="Email(s)" required></textarea>
+            <input type="file" id="csvInput" class="csvInput" accept=".csv">
+          </li>
+          <li>
+            <p>Edit or add html template</p>
+            <label for="htmlTemp"></label>
+            <textarea id="htmlTemp" class="inputFields myTextarea" name="additionalInfo" rows="5" required></textarea>
+
+          </li>
+          
+          <li id="center-btn csvInput">
+            <button type="submit" id="send-btn">Send</button>
+          </li>
+        </ul>
+        <div class="terminal"></div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
